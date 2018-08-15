@@ -52,9 +52,11 @@ ROBOTSTXT_OBEY = True
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
-#DOWNLOADER_MIDDLEWARES = {
-#    'PythonDemo.middlewares.PythondemoDownloaderMiddleware': 543,
-#}
+DOWNLOADER_MIDDLEWARES = {
+   # 'PythonDemo.middlewares.PythondemoDownloaderMiddleware': 543,
+   # 'PythonDemo.middlewares.my_proxy': 543,
+   'PythonDemo.middlewares.my_useragent': 543,
+}
 
 # Enable or disable extensions
 # See https://doc.scrapy.org/en/latest/topics/extensions.html
