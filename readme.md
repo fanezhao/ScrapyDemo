@@ -29,6 +29,20 @@ pip3 install Scrapy
 
 完成安装。
 
+6、Scrapy常用命令
+
+```
+# 创建一个项目
+scrapy startproject your_project_name
+
+# 初始化一个爬虫（spiders目录下）
+scrapy genspider your_spider_file_name your_spider_name
+
+# 运行一个爬虫（spiders目录下）
+scrapy crawl your_spider_name
+
+```
+
 ### 使用Dockers 安装MongoDB
 1、使用Docker 安装Mongo
 ```
