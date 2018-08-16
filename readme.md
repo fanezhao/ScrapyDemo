@@ -41,6 +41,15 @@ scrapy genspider your_spider_file_name your_spider_name
 # 运行一个爬虫（spiders目录下）
 scrapy crawl your_spider_name
 
+# 导出文件（spiders目录下）
+scrapy crawl your_spider_name -o your_file_name
+
+like:
+# 导出json文件
+scrapy crawl HelloWorld -o HelloWorld.json
+# 导出csv文件
+scrapy crawl HelloWorld -o HelloWorld.csv
+
 ```
 
 ### 使用Dockers 安装MongoDB
