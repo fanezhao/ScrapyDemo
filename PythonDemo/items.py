@@ -23,3 +23,8 @@ class PythondemoItem(scrapy.Item):
     evaluate = scrapy.Field()
     # 电影描述
     describe = scrapy.Field()
+
+
+class TestItem(scrapy.Item):
+    name = scrapy.Field()
+    age = scrapy.Field()
