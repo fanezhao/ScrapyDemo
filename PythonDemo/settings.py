@@ -96,9 +96,14 @@ mongo_port = 27017
 mongo_db_name = 'douban'
 mongo_db_collection = 'movie'
 
-
 mysql_host = '192.168.2.107'
 mysql_port = 3306
 mysql_username = 'root'
 mysql_password = '123456'
 mysql_db_name = 'python_db'
+
+# mysql_host = '192.168.2.44'
+# mysql_port = 3306
+# mysql_username = 'fengye'
+# mysql_password = 'fengye'
+# mysql_db_name = 'python_mysql'
