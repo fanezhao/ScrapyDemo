@@ -1,5 +1,5 @@
 from scrapy import cmdline
-cmdline.execute(['scrapy', 'crawl', 'business_information_spider'])
+cmdline.execute(['scrapy', 'crawl', 'overview_spider'])
 
 # # 多爬虫同时执行脚本
 # import os

@@ -32,8 +32,8 @@ class TestItem(scrapy.Item):
 
 # 工商备案
 class BusinessInformationItem(scrapy.Item):
-    # 公司title
-    corporate_title = scrapy.Field()
+    # 平台名称
+    platform_name = scrapy.Field()
     # 公司名称
     corporate_name = scrapy.Field()
     # 统一社会信用代码
@@ -74,3 +74,21 @@ class BusinessInformationItem(scrapy.Item):
     platform_used_name = scrapy.Field()
     # 经营范围
     scope_of_operation = scrapy.Field()
+
+
+# 概览
+class OverViewItem(scrapy.Item):
+    # 平台名称
+    platform_name = scrapy.Field()
+    # 注册资金
+    register_money = scrapy.Field()
+    # 股权上市
+    public_equity = scrapy.Field()
+    # 银行存管
+    bank_depository = scrapy.Field()
+    # 融资记录
+    financing = scrapy.Field()
+    # 监管协会
+    association = scrapy.Field()
+    # ICP号
+    icp = scrapy.Field()

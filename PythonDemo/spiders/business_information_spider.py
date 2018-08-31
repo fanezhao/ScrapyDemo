@@ -11,7 +11,7 @@ class IndustryAndCommerceRecordSpiderSpider(scrapy.Spider):
     def parse(self, response):
         msg = response.xpath("//div[@class='lcen']")
         item = BusinessInformationItem()
-        item['corporate_title'] = msg.xpath("//div[@class='title']//h1/text()").extract_first()
+        item['platform_name'] = msg.xpath("//div[@class='title']//h1/text()").extract_first()
 
         item['corporate_name'] = msg.xpath(".//tr[1]/td[2]/text()").extract_first()
         item['unified_social_credit_code'] = msg.xpath(".//tr[1]/td[4]/text()").extract_first()
