@@ -1,7 +1,8 @@
 # 备案信息
 create table wdzj_company_business_information (
-  id                         bigint(20) primary key auto_increment,
-  corporate_title            varchar(50)       default null comment '平台名称',
+  id                         bigint(20) primary key auto_increment comment '主键',
+  platform_id                bigint(20)       not null comment '平台ID',
+  platform_name            varchar(50)       default null comment '平台名称',
   corporate_name             varchar(500)       default null comment '公司名称',
   unified_social_credit_code varchar(100)       default null comment '统一社会信用代码',
   legal_representative       varchar(100)       default null comment '法人代表',
@@ -32,7 +33,7 @@ create table wdzj_company_business_information (
 # 概览
 create table wdzj_company_overview {
   id    bigint(20) primary key auto_increment comment '主键',
-  platform_id bigint(20) not null comment '平台主键',
+  platform_id bigint(20) not null comment '平台id',
   platform_name varchar(50) not null comment '平台名称',
   register_money varchar(50) default null comment '注册资金',
   public_equity varchar(50) default null comment '股权上市',
